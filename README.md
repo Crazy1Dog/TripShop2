@@ -1,0 +1,1 @@
+# TripShop2测试从android studio本地往github上传项目文件
