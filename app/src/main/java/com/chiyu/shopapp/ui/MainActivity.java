@@ -65,6 +65,7 @@ import com.hyphenate.easeui.ui.EaseConversationListFragment;
 import com.hyphenate.util.EMLog;
 @SuppressLint("CutPasteId")
 public class MainActivity extends FragmentActivity {
+//	在这里添加一行测试代码test、test
 	// private Toast toaster;
 	Handler handler = new Handler(){  
 	      
