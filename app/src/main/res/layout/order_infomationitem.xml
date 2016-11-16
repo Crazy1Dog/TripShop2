@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF8F8F8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/order_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="出游人"
+                    android:textColor="#FF7E7E7E"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/order_username_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/order_mob_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="5"
+                    android:text=""
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+
+                <!--
+                     <TextView
+                    android:id="@+id/order_xingbie_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:text="成人"
+                    android:textColor="#FF7E7E7E"
+                    android:textSize="15sp" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/order_shanchu_item"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/detail_icon_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="00.0dip"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@color/line_quanbu" />
+    </LinearLayout>
+
+</LinearLayout>

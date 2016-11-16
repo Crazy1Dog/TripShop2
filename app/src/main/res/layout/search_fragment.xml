@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <com.chiyu.shopapp.utils.PullToRefreshView
+        android:id="@+id/mPullToView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ListView
+        android:id="@+id/lv_searchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="#00000000">
+       </ListView>
+    </com.chiyu.shopapp.utils.PullToRefreshView>
+        
+    
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ededed"/>
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:orientation="horizontal"
+	    android:background="#FFFFFF"
+	    android:layout_gravity="bottom">
+	    <Button 
+	        android:id="@+id/btn_departure"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:textColor="#787878"
+	        android:textSize="12sp"
+	        android:drawableTop="@mipmap/search_toolbar_coordinate"
+	        android:background="#00ffffff"
+	        android:layout_weight="1"
+	        android:text="出发地点"/>
+	    <Button 
+	        android:id="@+id/btn_destination"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:textColor="#787878"
+	        android:textSize="12sp"
+	        android:drawableTop="@mipmap/search_toolsbar_oval"
+	        android:background="#00ffffff"
+	        android:layout_weight="1"
+	        android:text="目的地"/>
+	    <Button 
+	        android:id="@+id/btn_choices"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:textColor="#787878"
+	        android:textSize="12sp"
+	        android:drawableTop="@mipmap/search_toolsbar_shape"
+	        android:background="#00ffffff"
+	        android:layout_weight="1"
+	        android:text="筛选"/>
+	    <Button 
+	        android:id="@+id/btn_price_order"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:textColor="#787878"
+	        android:textSize="12sp"
+	        android:drawableTop="@mipmap/search_toolsbar_pricesearch_price"
+	        android:background="#00ffffff"
+	        android:layout_weight="1"
+	        android:text="价格排序"/>
+	</LinearLayout>
+
+</LinearLayout>

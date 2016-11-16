@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ededed" />
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ffffff"
+        android:text="更多..."
+        android:textColor="#FF50D2C2"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_redbag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/v_divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/btn_more"
+            android:background="#ededed" />
+
+        <ImageView
+            android:id="@+id/iv_redbag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_divider"
+            android:src="@mipmap/skt_btn_redbag" />
+    </LinearLayout>
+
+</LinearLayout>

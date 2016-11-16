@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_text_on">#8EECBF</color>
+    <color name="tab_text_off">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="color_title_bg">#00ffffff</color>
+    <color name="white_transparent">#00ffffff</color>
+    <color name="color_FFA4A9AF">#FFA4A9AF</color>
+    <color name="black">#000000</color>
+    <color name="blacks">#aaccee</color>
+    <color name="text_main">#979797</color>
+    
+    <!--radiobutton color -->
+    <color name="radio_button_text_press">#2EBAA9</color>
+    <color name="radio_button_text_normal">#8D8D8D</color>
+    <color name="rbtn_choices_check">#FFFFFFFF</color>
+    <color name="rbtn_choices_uncheck">#FFEDEDED</color>
+    
+    <color name="rgb_text_check">#29CCB8</color>
+    <color name="rgb_text_normal">#252525</color>
+    
+    <color name="beijing">#F1F1F1</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="color_tab_selected">#7ed321</color>
+    <color name="color_tab_unselected">#d1d1d1</color>
+    <color name="color_line">#e5e5e5</color>
+    <color name="color_grid">#DBDBDB</color>
+    <color name="color_title">#4e6397</color>
+    <color name="color_none">#4D6299</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_order_background">#F0F1F1</color>
+    <color name="color_order_line">#0364C5</color>
+    <color name="color_order_orgin_line">#BABABA</color>
+    <color name="color_50659b">#50659b</color>
+    <color name="color_cececd">#cececd</color>
+    <color name="f33">#333333</color>
+    <color name="line_quanbu">#dddddd</color>
+    <color name="line_details">#FF3C3F46</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <!-- 日历 -->
+    <color name="text_6">#FFf3feff</color>
+    <color name="Text">#333333</color>
+    <color name="ToDayText">#333333</color>
+    <color name="Noteback">#333333</color>
+    <color name="noMonth">#989898</color>
+    <color name="chengse">#333333</color>
+    <color name="actionbar_bg">#4889db</color>
+    <color name="juse">#FFE15151</color>
+    <color name="yuwei">#FF9D9B9B</color>
+    
+</resources>

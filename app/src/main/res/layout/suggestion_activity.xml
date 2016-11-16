@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+     <RelativeLayout 
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:padding="5dp"
+        >
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_back_green"
+            />
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:layout_centerInParent="true"
+            />
+         <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="提交"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+         <RelativeLayout
+        android:id="@+id/re_option"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/ed_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/em_add"
+            android:gravity="left|top"
+            android:hint="请输入500字以内的文字"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:minLines="6"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_num_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+        android:layout_below="@id/re_option"
+        android:layout_marginRight="15dp" />
+    </RelativeLayout>
+   
+
+</LinearLayout>

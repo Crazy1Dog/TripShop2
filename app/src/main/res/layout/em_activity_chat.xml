@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_fla"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_protect"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_protect"
+            android:text="三亚双人浪漫之旅"
+            android:textColor="#454545"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_protect"
+            android:gravity="center_vertical"
+            android:text="3500"
+            android:textColor="#EA5568"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/tv_price"
+            android:gravity="center_vertical"
+            android:text="起"
+            android:textColor="#AEAEAD"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_order_shape"
+            android:text="立即购买"
+            android:textColor="#4BD8C7"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/invitation_background750"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登 录"
+            android:textColor="#FF5C787B"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/skt_btn_close" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/invitation_shape"
+        android:hint="请输入手机号"
+        android:paddingLeft="20dp"
+        android:textColor="#FF5C787B"
+        android:textColorHint="#FF50D2C2"
+        android:textSize="20sp" 
+       android:inputType="phone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/invitation_shape"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_security"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/invitation_shape"
+            android:hint="请输入验证码"
+            android:paddingLeft="20dp"
+            android:textColor="#FF5C787B"
+            android:textColorHint="#FF50D2C2"
+            android:textSize="20sp" 
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/bt_security"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/security_button_shape1"
+            android:text="获取验证码"
+            android:textColor="#FF817E86"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_login_shape1"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:text="立即登录" />
+
+</LinearLayout>

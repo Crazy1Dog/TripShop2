@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/invitation_background750"
+    android:orientation="vertical" 
+   >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:orientation="horizontal"
+	    >
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="56dp"
+	        android:text="欢迎使用旅游管家"
+	        android:textColor="#FF5C787B"
+	        android:textSize="24sp"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+	    <EditText 
+	        android:id="@+id/et_invitation"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="@drawable/invitation_shape"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:textColorHint="#FF50D2C2"
+	        android:hint="请输入您的邀请码"/>
+	    <Button 
+	        android:id="@+id/login_log_bt"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dp"
+	        android:background="@drawable/invitation_button_shape"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:layout_marginRight="30dp"
+	        android:text="确 定"/>
+	</LinearLayout>
+    
+    
+
+</LinearLayout>

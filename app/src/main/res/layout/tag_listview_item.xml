@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+    <TextView
+	     android:id="@+id/tv_category"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_centerVertical="true"
+	     android:layout_marginTop="20dp"
+	     android:layout_marginBottom="20dp"
+	     android:textSize="20dp"
+	     android:textColor="#454545"
+	     android:paddingLeft="20dp"
+	     android:paddingRight="20dp"
+	     android:text="北京"/>
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+	    android:layout_alignParentRight="true"
+	    android:src="@mipmap/zhifu_icon_unsel"
+	    android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

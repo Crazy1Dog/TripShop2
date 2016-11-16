@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		<com.chiyu.shopapp.utils.MyPullToRefreshView
+        android:id="@+id/home_refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:orientation="vertical">
+        <com.chiyu.shopapp.utils.NotifyingScrollView
+            android:id="@+id/sv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed" >
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ededed"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/home_kefu_bg750" >
+
+                    <TextView
+                        android:id="@+id/tv_storeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="中青旅上海徐汇区分店"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/bt_search"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/skt_btn_search1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/jidiao_shape" >
+
+                        <com.chiyu.shopapp.view.CircleImageView
+                            android:id="@+id/iv_consultant"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="34dp"
+                            app:civ_border_color="#FFFFFFFF"
+                            app:civ_border_width="1px" />
+
+                        <TextView
+                            android:id="@+id/tv_consultant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/iv_consultant"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@id/iv_consultant"
+                            android:text=""
+                            android:textColor="#FF262626"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/tv_consultant"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#FF979797"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lianxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/iv_consultant"
+                            android:layout_alignLeft="@id/tv_consultant"
+                            android:text="联系方式:"
+                            android:textColor="#FF979797"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_telephone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/iv_consultant"
+                            android:layout_toRightOf="@id/tv_lianxi"
+                            android:text=""
+                            android:textColor="#FF979797"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/connect_shape"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#FFC0EAE5"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_navigation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#00ffffff"
+                            android:drawableLeft="@mipmap/skt_btn_address"
+                            android:paddingLeft="35dp"
+                            android:paddingRight="40dp"
+                            android:text="带我去玩"
+                            android:textColor="#FF2EBAA9"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_call"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#00ffffff"
+                            android:drawableLeft="@mipmap/skt_btn_phone"
+                            android:paddingLeft="35dp"
+                            android:paddingRight="40dp"
+                            android:text="电话顾问"
+                            android:textColor="#FF2EBAA9"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00ffffff" >
+                        </android.support.v4.view.ViewPager>
+
+                        <com.chiyu.shopapp.view.Dots_View
+                            android:id="@+id/dots_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            app:checked="@mipmap/more_dian_sel"
+                            app:left_margin="30"
+                            app:unchecked="@mipmap/more_dian" >
+                        </com.chiyu.shopapp.view.Dots_View>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 在此处添加活动分类列表 -->
+                <LinearLayout 
+                    android:id="@+id/ll_lv_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </com.chiyu.shopapp.utils.NotifyingScrollView>
+    </com.chiyu.shopapp.utils.MyPullToRefreshView>
+        <RelativeLayout
+            android:id="@+id/rl_home_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#FFEBEBEB" >
+
+            <TextView
+                android:id="@+id/tv_home_toptile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="#FF3C3F46"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_home_topsearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/btn_search2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

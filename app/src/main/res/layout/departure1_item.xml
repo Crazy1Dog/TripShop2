@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF">
+     <CheckedTextView
+	     android:id="@+id/ctv_departure"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_centerVertical="true"
+	     android:layout_marginTop="20dp"
+	     android:layout_marginBottom="20dp"
+	     android:textSize="20dp"
+	     android:textColor="#454545"
+	     android:checkMark="@drawable/checkedtextview_selector"
+	     android:paddingLeft="20dp"
+	     android:paddingRight="20dp"
+	     android:text="北京"/>
+	 
+</RelativeLayout>

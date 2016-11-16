@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" >
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/nav_back_green" />
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#3C3F46"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="#ffffff" >
+
+
+
+        <RelativeLayout
+            android:id="@+id/ll_about_mine"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_about_me_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/set_icon_info" />
+
+            <Button
+                android:id="@+id/btn_about_mine_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/detail_icon_right" />
+
+            <TextView
+                android:id="@+id/tv_about_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_about_me_logo"
+                android:text="关于我们"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/fengexian"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_about_mine"
+            android:layout_marginLeft="16dp"
+            android:background="#B2B2B2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_about_switch"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_below="@id/fengexian"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_about_switch_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/set_icon_info" />
+
+            <com.hyphenate.easeui.widget.EaseSwitchButton
+                android:id="@+id/switch_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp" />
+         
+
+            <TextView
+                android:id="@+id/tv_about_switch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_about_switch_logo"
+                android:text="接收推送消息"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/log_out_shape"
+        android:text="退出账号"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
